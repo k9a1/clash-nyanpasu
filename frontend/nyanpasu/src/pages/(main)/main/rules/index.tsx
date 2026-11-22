@@ -29,6 +29,7 @@ import {
 import { useFocusHighlight } from '../_modules/focus-highlight'
 import { ruleLabel } from '../_modules/traffic-filters'
 import { useSearchTerm } from '../_modules/use-search-term'
+import CustomRulesEditor from './_modules/custom-rules-editor'
 import { rankByValue } from './_modules/rank-by-value'
 import {
   RULE_ROW_HEIGHT,
@@ -310,6 +311,8 @@ function RouteComponent() {
             value={search}
             onValueChange={setSearch}
           />
+
+          <CustomRulesEditor />
         </DataPageToolbar>
       }
     >
